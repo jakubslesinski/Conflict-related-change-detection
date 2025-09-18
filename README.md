@@ -146,11 +146,11 @@ Developed for **conflict-related damage detection**:
 To reduce false alarms from natural cycles, both algorithms are applied to **seasonally filtered data**:  
 - REACTIV computes CV, intensity, and change timing only on seasonal subsets.
 
-💻 **Script**: [scripts/seasonality.js](./scripts/reactiv_seasonal.js)
+💻 **Script**: [scripts/reactiv_seasonal.js](./scripts/reactiv_seasonal.js)
 
 - Omnibus compares covariance matrices across **same-season images**.
 
-💻 **Script**: [scripts/seasonality.js](./scripts/omnibus_seasonal.js)
+💻 **Script**: [scripts/omnibus_seasonal.js](./scripts/omnibus_seasonal.js)
 
 ---
 

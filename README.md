@@ -139,16 +139,18 @@ Developed for **conflict-related damage detection**:
 
 ## 🍂 Seasonality in REACTIV and Omnibus
 
-To reduce false alarms from natural cycles, both algorithms are applied to **seasonally filtered data**:  
-- REACTIV computes CV, intensity, and change timing only on seasonal subsets.  
-- Omnibus compares covariance matrices across **same-season images**.  
-
 <a href="./figs/seasonality.png" target="_blank">
   <img width="100%" src="./figs/seasonality.png" alt="Seasonality visualization">
 </a>
 
-📚 **Source**: [Reference Paper](https://example.com)  
-💻 **Script**: [scripts/seasonality.js](./scripts/seasonality.js)
+To reduce false alarms from natural cycles, both algorithms are applied to **seasonally filtered data**:  
+- REACTIV computes CV, intensity, and change timing only on seasonal subsets.
+
+💻 **Script**: [scripts/seasonality.js](./scripts/reactiv_seasonal.js)
+
+- Omnibus compares covariance matrices across **same-season images**.
+
+💻 **Script**: [scripts/seasonality.js](./scripts/omnibus_seasonal.js)
 
 ---
 
@@ -166,7 +168,9 @@ See the [LICENSE](./LICENSE) file for full details.
 If you have questions about this repository, please contact the authors:
 
 - **Kinga KARWOWSKA**, Military University of Technology, Department of Imagery Intelligence  
-📧 email: [kinga.karwowska@wat.edu.pl](mailto:kinga.karwowska@wat.edu.pl)  
+📧 email: [kinga.karwowska@wat.edu.pl](mailto:kinga.karwowska@wat.edu.pl)
+- **Jakub SLESINSKI**, Military University of Technology, Department of Imagery Intelligence  
+📧 email: [jakub.slesinski@wat.edu.pl](mailto:jakub.slesinski@wat.edu.pl)  
 
 For issues and contributions, please use the [GitHub Issues](../../issues) section of this repository.  
 We welcome collaborations and feedback from the research community.

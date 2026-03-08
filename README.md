@@ -20,11 +20,11 @@ If you use this repository, please cite:
 
 ```bibtex
 @article{surname2025article,
-  title   = {Integrating optical and radar satellite data for conflict-related change detection in Ukraine: a multi-temporal analysis of building destruction and agricultural disruption},
+  title   = {Integrating optical and radar satellite data for conflict-related change detection in Ukraine},
   author  = {Kinga Karwowska, Jakub Slesinski, Aleksandra Sekrecka, Michal Smiarowski, Kart Metsoja},
-  journal = {International Journal of Applied Earth Observation and Geoinformation},
-  year    = {2025},
-  doi     = {10.xxxx/xxxxx}
+  journal = {Scientific Reports},
+  year    = {2026},
+  doi     = {https://doi.org/10.1038/s41598-026-41424-3}
 }  
 ```
 ---

@@ -15,7 +15,7 @@ The ongoing war in Ukraine has caused extensive damage to infrastructure, agricu
 
 If you use this repository, please cite:
 
-> Surname, N., & Coauthor, M. (2025). *Article Title*. Journal Name. https://doi.org/xxxx  
+> Karwowska, K., Slesinski, J., Sekrecka, A. et al. Integrating optical and radar satellite data for conflict-related change detection in Ukraine. Sci Rep (2026). https://doi.org/10.1038/s41598-026-41424-3 
 
 ```bibtex
 @article{surname2025article,

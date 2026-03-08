@@ -1,4 +1,4 @@
-# 📄 Integrating optical and radar satellite data for conflict-related change detection in Ukraine: a multi-temporal analysis of building destruction and agricultural disruption
+# Integrating optical and radar satellite data for conflict-related change detection in Ukraine: a multi-temporal analysis of building destruction and agricultural disruption
 
 ---
 
@@ -8,10 +8,10 @@
 
 ---
 
-## 📝 Abstract
+## Abstract
 The ongoing war in Ukraine has caused extensive damage to infrastructure, agriculture, and the environment, while ground-based assessment remains severely constrained due to security concerns. This paper presents a novel change detection methodology based exclusively on openly available Sentinel-1 and Sentinel-2 satellite data. The key contribution of the proposed approach is the automation of post-conflict change analysis tailored to land-cover type (urban vs. non-urban), achieved through the integration of SAR-based change detection results and optical image classification, combined with the reduction of local classification artifacts using context-aware smoothing. The proposed algorithm enables automatic land-cover type classification and adaptive selection of the appropriate analysis strategy as an outcome of land-cover change assessment using Sentinel-1 and Sentinel-2 imagery. A comparison of the obtained results with the UNOSAT database confirmed the detection of more than 80% of damaged buildings (quality metrics: recall 78.8%, precision 87.5%, F1-score 0.828). The proposed classification method incorporating context-aware smoothing achieves higher built-up area detection accuracy than global land-cover products, outperforming the AlphaEarth platform (0.98 vs. 0.87). The presented approach enables rapid land-cover change analysis and damage detection using openly available satellite data, particularly in conflict-affected regions where direct field measurements are restricted due to security constraints.
 
-## 📖 Citation (to be completed) 
+## 📖 Citation
 
 If you use this repository, please cite:
 
@@ -36,23 +36,23 @@ If you use this repository, please cite:
 ├── LICENSE
 └── README.md
 ```
-# 🚀 Methods
+# Methods
 
-## 🌈 REACTIV (Rapid and EAsy Change detection in radar TIme-series by Variation coefficient)
+## REACTIV (Rapid and EAsy Change detection in radar TIme-series by Variation coefficient)
 
 REACTIV is an efficient and fast algorithm for detecting changes in radar (SAR) time series, designed for easy interpretation of results.  
 The algorithm transforms each pixel into the HSV color space:
 
-- **Hue** 🎨 → Time of maximum signal  
-- **Saturation** 💡 → Intensity & reliability of the change  
-- **Value** 🌟 → Maximum radar backscatter intensity  
+- **Hue** → Time of maximum signal  
+- **Saturation** → Intensity & reliability of the change  
+- **Value** → Maximum radar backscatter intensity  
 
 After HSV → RGB conversion, the resulting visualization shows:  
 - **Color** → Change timing  
 - **Saturation** → Confidence level  
 - **Brightness** → Strength of radar signal  
 
-👉 Thresholding is applied to eliminate irrelevant fluctuations using empirically set parameters (typically `0.3` and `0.02`).
+Thresholding is applied to eliminate irrelevant fluctuations using empirically set parameters (typically `0.3` and `0.02`).
 
 ```js
 // -------------------------------------------------------------
@@ -76,7 +76,7 @@ var croppalet = 0.6;             // Use <1 if you do not want the full HSV palet
 
 ---
 
-## 🌀 REACTIV Polarimetric
+## REACTIV Polarimetric
 
 The polarimetric variant extends REACTIV by analyzing **VV** and **VH** polarization channels simultaneously.  
 
@@ -90,7 +90,7 @@ The polarimetric variant extends REACTIV by analyzing **VV** and **VH** polariza
 
 ---
 
-## ❄️ REACTIV FBG (Frozen Background Generation)
+## REACTIV FBG (Frozen Background Generation)
 
 This variant estimates a **frozen background** (stable backscatter reference) by analyzing cumulative subsets of amplitude values and computing the coefficient of variation.  
 It allows clearer distinction between **persistent structures** vs. **temporal anomalies**.
@@ -100,7 +100,7 @@ It allows clearer distinction between **persistent structures** vs. **temporal a
 
 ---
 
-## 🔍 Omnibus
+## Omnibus
 
 The Omnibus algorithm applies a **likelihood ratio test** for covariance matrix homogeneity under the assumption of a Wishart distribution.  
 - Detects subtle and gradual changes better than pairwise comparison.  
@@ -111,7 +111,7 @@ The Omnibus algorithm applies a **likelihood ratio test** for covariance matrix 
 
 ---
 
-## 🏚️ PWTT (Pixel-Wise T-Test)
+## PWTT (Pixel-Wise T-Test)
 
 Developed for **conflict-related damage detection**:  
 - Uses multi-temporal pixel standard deviation to reduce false alarms.  
@@ -123,7 +123,7 @@ Developed for **conflict-related damage detection**:
 
 ---
 
-## 🍂 Seasonality in REACTIV and Omnibus
+## Seasonality in REACTIV and Omnibus
 
 <a href="./figs/seasonality.png" target="_blank">
   <img width="100%" src="./figs/seasonality.png" alt="Seasonality visualization">
@@ -140,7 +140,7 @@ To reduce false alarms from natural cycles, both algorithms are applied to **sea
 
 ---
 
-# 📜 License
+# License
 
 This repository is released under the **MIT License**.  
 You are free to use, modify, and distribute the code for research and educational purposes, provided that proper attribution is given to the authors.  
@@ -149,7 +149,7 @@ See the [LICENSE](./LICENSE) file for full details.
 
 ---
 
-# 📩 Contact
+# Contact
 
 If you have questions about this repository, please contact the authors:
 
